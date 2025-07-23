@@ -1,0 +1,7 @@
+${PODS_ROOT}/Target Support Files/Pods-HYUIKitRuntimeUtils_Example/Pods-HYUIKitRuntimeUtils_Example-frameworks.sh
+${BUILT_PRODUCTS_DIR}/HYUIKitRuntimeUtils/HYUIKitRuntimeUtils.framework
+${BUILT_PRODUCTS_DIR}/ObjCRuntimeUtils/ObjCRuntimeUtils.framework
+${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework
+${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework
+${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework
+${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework

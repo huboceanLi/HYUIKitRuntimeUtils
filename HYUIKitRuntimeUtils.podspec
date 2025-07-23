@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HYUIKitRuntimeUtils'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'A short description of HYUIKitRuntimeUtils.'
 
 # This description is used to generate tags and improve search results.
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   create desc HYUIKitRuntimeUtils Test.
                        DESC
 
-  s.homepage         = 'https://github.com/OceanLi/HYUIKitRuntimeUtils'
+  s.homepage         = 'https://github.com/huboceanLi/HYUIKitRuntimeUtils'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'OceanLi' => 'li437277219@gmail.com' }

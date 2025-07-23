@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HYUIKitRuntimeUtils'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = 'A short description of HYUIKitRuntimeUtils.'
 
 # This description is used to generate tags and improve search results.
@@ -39,11 +39,4 @@ Pod::Spec.new do |s|
   s.dependency "ObjCRuntimeUtils", '0.0.2'
   s.dependency "Texture", '3.1.0'
 
-  # s.resource_bundles = {
-  #   'HYUIKitRuntimeUtils' => ['HYUIKitRuntimeUtils/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

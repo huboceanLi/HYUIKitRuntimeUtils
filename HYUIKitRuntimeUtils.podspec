@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'OceanLi' => 'li437277219@gmail.com' }
-  s.source           = { :git => 'https://github.com/OceanLi/HYUIKitRuntimeUtils.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/huboceanLi/HYUIKitRuntimeUtils.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '13.0'

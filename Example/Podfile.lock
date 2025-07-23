@@ -1,7 +1,7 @@
 PODS:
-  - HYUIKitRuntimeUtils (0.1.0):
+  - HYUIKitRuntimeUtils (0.5.0):
     - ObjCRuntimeUtils (= 0.0.2)
-    - Texture (= 3.1.0)
+    - Texture (~> 3.1.0)
   - ObjCRuntimeUtils (0.0.2)
   - PINCache (3.0.3):
     - PINCache/Arc-exception-safe (= 3.0.3)
@@ -55,7 +55,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HYUIKitRuntimeUtils: f0e95573e3b9421c63545a93bb7a29c8df027613
+  HYUIKitRuntimeUtils: b9b1bc71867a23b0b7071b686a1d4c2c290261c5
   ObjCRuntimeUtils: db0c4aae41091a9adf68b93e0f8864ed58dc1459
   PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
   PINOperation: daa34d4aa1d8449089be7d405b9d974abc4724c6

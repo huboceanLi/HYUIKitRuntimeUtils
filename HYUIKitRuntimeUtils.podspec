@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HYUIKitRuntimeUtils'
-  s.version          = '0.5.0'
+  s.version          = '0.6.0'
   s.summary          = 'A short description of HYUIKitRuntimeUtils.'
 
 # This description is used to generate tags and improve search results.
@@ -37,6 +37,6 @@ Pod::Spec.new do |s|
   s.source_files = 'HYUIKitRuntimeUtils/Classes/**/*'
   
   s.dependency "ObjCRuntimeUtils", '0.0.2'
-  s.dependency "Texture", '~> 3.0.0'
+  s.dependency "Texture", '~> 3.1.0'
 
 end

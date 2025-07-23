@@ -37,6 +37,6 @@ Pod::Spec.new do |s|
   s.source_files = 'HYUIKitRuntimeUtils/Classes/**/*'
   
   s.dependency "ObjCRuntimeUtils", '0.0.2'
-  s.dependency "Texture", '3.1.0'
+  s.dependency "Texture", '~> 3.0.0'
 
 end

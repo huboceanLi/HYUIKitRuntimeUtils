@@ -7,7 +7,6 @@
 //
 
 #import "HYViewController.h"
-#import <HYUIKitRuntimeUtils/UIKitRuntimeUtils-umbrella.h>
 
 @interface HYViewController ()
 

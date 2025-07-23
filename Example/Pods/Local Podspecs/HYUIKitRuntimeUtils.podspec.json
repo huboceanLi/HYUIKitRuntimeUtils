@@ -1,8 +1,8 @@
 {
   "name": "HYUIKitRuntimeUtils",
-  "version": "0.6.0",
-  "summary": "A short description of HYUIKitRuntimeUtils.",
-  "description": "create desc HYUIKitRuntimeUtils Test.",
+  "version": "1.0.0",
+  "summary": "In order to extract the texture separately encapsulated HYUIKitRuntimeUtils.",
+  "description": "In order to extract the texture separately encapsulated HYUIKitRuntimeUtils.",
   "homepage": "https://github.com/huboceanLi/HYUIKitRuntimeUtils",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/huboceanLi/HYUIKitRuntimeUtils.git",
-    "tag": "0.6.0"
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "13.0"

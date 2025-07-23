@@ -7,118 +7,117 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03FB46DF17B62B5D895683648F50DA7B /* ObjCRuntimeUtils-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 309D1A254FF1FE0DECFD8B079BC62EE5 /* ObjCRuntimeUtils-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07CC242CB145A85D71AADCF98103A0EB /* Pods-HYUIKitRuntimeUtils_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ECDB0C870CC894F6DB71931B661816 /* Pods-HYUIKitRuntimeUtils_Tests-dummy.m */; };
-		14651E97EEA826D55A19C9923052061B /* NSBag.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2F41ED0F3BFE60173F8DE1C7284E8B /* NSBag.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1791A0FAE830ACE0CAAA49FD7DF7BFCE /* NotificationCenterUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A08FDED2D355D439A5D70A7143E68D4 /* NotificationCenterUtils.m */; };
-		1ADE5D8E6CA0C875CB9BDF8152F27537 /* NSWeakReference.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D4C92305E28150A7D3B0619708E245 /* NSWeakReference.m */; };
-		1BA9912B8C9EE2C74C59B3FDB47287E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		0F8CB212E8BAB2AFDDFA92838D7278B0 /* NSBag.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E03DF0696FA0351C0FBB7E0E3E2930D /* NSBag.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14AFABCE0F0BD834F2FF7BACD3236367 /* RuntimeUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CCBD6B9282B57A567F9D11D4FFBC10F3 /* RuntimeUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A423E2C343FB74BBDD7F20D1CEC07DE /* NSWeakReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A7B40F421E4925ED28BC08D0D76B5B /* NSWeakReference.m */; };
+		1C08CED84E8B673FEEEAEF7B693A7CC9 /* UIViewController+Navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B9806D3E7111C88703E623AC853A85 /* UIViewController+Navigation.m */; };
 		1ED354C0ABE2C7F63B83869749072CD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		33D9CA6255BC7BF1E8997936E0C20504 /* RuntimeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 291B22AA4531B202D41C919CD2E6918C /* RuntimeUtils.m */; };
+		358FB9F703EDBBADB0D7FE80BE1B7E3D /* UIViewController+Navigation.h in Headers */ = {isa = PBXBuildFile; fileRef = 12E50597372103C88E4CE32D3EA0E745 /* UIViewController+Navigation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3637603E14B82BE76DD926D1FB4EB868 /* HYUIKitRuntimeUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B8166AA50859EE54445BF1C606B85 /* HYUIKitRuntimeUtils-dummy.m */; };
 		370920AFDB9D48AFF22B919AF8E2F122 /* Pods-HYUIKitRuntimeUtils_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BFA42E2486D2F565C2861A3F7B50A31A /* Pods-HYUIKitRuntimeUtils_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3A6FC1EACBEA6BDD8EE3E133BD056A07 /* NotificationCenterUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 538F083C4AEC500327F98153F7109F3D /* NotificationCenterUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3834FB57E057344BBA90F346CE958867 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
 		3C8806A36F0DC5488DF91652CCB37DD7 /* Pods-HYUIKitRuntimeUtils_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDFDAFC4189EACDE48CD96C7D4EF48D /* Pods-HYUIKitRuntimeUtils_Example-dummy.m */; };
-		4C7E57FEA8BC8C964E01EC9A829945A7 /* UIKitRuntimeUtils-prefix.pch in Sources */ = {isa = PBXBuildFile; fileRef = 90D54AAC80007811856005518FCDA235 /* UIKitRuntimeUtils-prefix.pch */; };
-		56FD2976E5606FEF2EE691507420D2C3 /* UIWindow+OrientationChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D148E2AB5F8256FCCB5C78F1A54FCEB /* UIWindow+OrientationChange.m */; };
-		5BFB02FD4E593771D53DF33541D9A7E9 /* UIKitUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD9DC38B2771892225DA663DB204539 /* UIKitUtils.m */; };
-		5FAF831741DF822259906F78FCD71E8B /* UIMenuItem+Icons.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E489631FC2F61444A4976287F1B11AE /* UIMenuItem+Icons.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		65B036C8CBA43D4D96B961633BC0F840 /* UIViewController+Navigation.h in Headers */ = {isa = PBXBuildFile; fileRef = 124A521D7270C681E3DFC51342AB2435 /* UIViewController+Navigation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		65B050ECC16B57D5735D0D5FA6E3D81D /* NSWeakReference.h in Headers */ = {isa = PBXBuildFile; fileRef = 52C6967CC9F9412BBA0B612C44EC0E4B /* NSWeakReference.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		772F40E4BEED06860B0F7EC99C19EF60 /* UIWindow+OrientationChange.h in Headers */ = {isa = PBXBuildFile; fileRef = F945EEDA4D3E3C41AC161C5A60B7E367 /* UIWindow+OrientationChange.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7A5609F067B9671BFD2D630AECDEA959 /* ObjCRuntimeUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D5D39608AC782B29B4D846B3766421 /* ObjCRuntimeUtils-dummy.m */; };
-		7A74781BBEFF7A93B631A4B7BF9CE3D1 /* RuntimeUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CCBD6B9282B57A567F9D11D4FFBC10F3 /* RuntimeUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		851A3147CD506F6D4995088C95FA0BA7 /* UIViewController+Navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E99A6CD4AAB3DD3044B29BA8EAB3BD8 /* UIViewController+Navigation.m */; };
-		8B6296BA0FD124CA710F53356573C4BF /* UIMenuItem+Icons.m in Sources */ = {isa = PBXBuildFile; fileRef = CF200515666F1E8288A277C3615A3786 /* UIMenuItem+Icons.m */; };
+		4CE0A8E6D24E5BCE365E6A9A4289D311 /* UINavigationItem+Proxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A7CB2B2A73268D1589FC2D6FFD29119 /* UINavigationItem+Proxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53C9AB7177C481878AA1257A2E44A02B /* UINavigationItem+Proxy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4D279ECD649673EB7DCF4CE905082E /* UINavigationItem+Proxy.m */; };
+		5A4339DD22A61844E77333A423E3B727 /* UIMenuItem+Icons.m in Sources */ = {isa = PBXBuildFile; fileRef = 1754C4D277C1357EE8C9E65F65B38517 /* UIMenuItem+Icons.m */; };
+		5DC57C2C3548411639B95B421058775A /* NSWeakReference.h in Headers */ = {isa = PBXBuildFile; fileRef = F76F9D37CC39A6F9F0A629F78A1BD4CC /* NSWeakReference.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		738C0334CA1FBB8001215F52DC231D0D /* UIWindow+OrientationChange.h in Headers */ = {isa = PBXBuildFile; fileRef = D4C2F0B5BB7D2A74208053754AD54414 /* UIWindow+OrientationChange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		743A18949ABB9EA1188C808CD5E3F6D3 /* NotificationCenterUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 79FD7BD2B33F0BDE3D6E0B7C71322F12 /* NotificationCenterUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86E0AB1858DB4D249F5E50B630C02617 /* UIKitUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B463AF7C2DCF1E2A0DBB98F5383DF5 /* UIKitUtils.m */; };
+		87D10E042EEE15FB0645273905042F9C /* UIKitRuntimeUtils-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22E5C4202261D7ACFCB4111F5878C618 /* UIKitRuntimeUtils-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CE82CF79BFF10F8D04AC3BD14250187 /* UIWindow+OrientationChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 032EC9B1F164C8F11ED27CF60C17D114 /* UIWindow+OrientationChange.m */; };
 		94CF1421037BBBA13380827D738C5540 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		9C8F2417C8622E14613B52659724058D /* UIKitRuntimeUtils-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F6C353E6E2F49EA99C2C616D7E0C71E /* UIKitRuntimeUtils-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BCA4F6BF3843B5B4A0F5C460C23A971E /* UINavigationItem+Proxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D416F588EAB53A90F03367E2B164FA /* UINavigationItem+Proxy.m */; };
+		95E009747373FDF75046315412B8DF16 /* NSBag.m in Sources */ = {isa = PBXBuildFile; fileRef = 6219661C1CF6767FB5F0C6CAF2C3E696 /* NSBag.m */; };
+		A665349EC1CD4205BD429D6F6D487666 /* NotificationCenterUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B04EA502DB8FDB3160B635805CA26E4D /* NotificationCenterUtils.m */; };
+		AD431A52217541DA3D37BE958C1D586A /* UIMenuItem+Icons.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EE74F00FE9E66FCE735ACE207D7D790 /* UIMenuItem+Icons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C010F00A3C7E8C1947A32BB831D8321B /* HYUIKitRuntimeUtils-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51C0676F8FA323619A349EC1E53A7513 /* HYUIKitRuntimeUtils-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C867B33173313CCFD6B21AD314E495A3 /* Pods-HYUIKitRuntimeUtils_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E4B6068E3B031D97B6C071FEE6A5E9 /* Pods-HYUIKitRuntimeUtils_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CE492F28C5231E468070AA7E17450052 /* UIKitUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = FAC0BE8E757F268C44BED92251C0D406 /* UIKitUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D19CE17CA3F8BE51AB5227A1CCC8D668 /* RuntimeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 291B22AA4531B202D41C919CD2E6918C /* RuntimeUtils.m */; };
-		D8F77D8E8BEA5402ACB34D8915B3B440 /* HYUIKitRuntimeUtils-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BEF5CEFAA8AA06DA8E5017AAA273D8B /* HYUIKitRuntimeUtils-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DC1051C6D358CD79B91621C1043BE3AA /* NSBag.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F644D6353CAE8DFAA62064AD9CA4E6B /* NSBag.m */; };
-		E55DA3A56C527F0ACE0A3673E89BA6F0 /* UIKitRuntimeUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D671941FD72B66C03EEE24E84E7E0D3 /* UIKitRuntimeUtils-dummy.m */; };
-		EEAA427A67871B1E6B79687F104F5460 /* HYUIKitRuntimeUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 112C423EC34178A89B9A3AE657E9CF2D /* HYUIKitRuntimeUtils-dummy.m */; };
-		F34CBDC3FD13344314B652C9DACFFA0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		F410AE479B41E98B1F12C2F55FE49580 /* UINavigationItem+Proxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 76F6537DD6EEE467720E8454261965AA /* UINavigationItem+Proxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F70F2C9E87465E0B22CF5B409AF96C46 /* ObjCRuntimeUtils-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 309D1A254FF1FE0DECFD8B079BC62EE5 /* ObjCRuntimeUtils-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D23343A52CE47B98B3ED1A17F7D3A02E /* ObjCRuntimeUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D5D39608AC782B29B4D846B3766421 /* ObjCRuntimeUtils-dummy.m */; };
+		D2DBBF57AB0CEB37E81D8DE96318538A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		D4786E4A70E582CCBEFB939C85F68451 /* UIKitUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = E60765C00827A3B7F33ED168B8B5A7B7 /* UIKitUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9E9A250C545CCBFD65D4D10B67757F4 /* UIKitRuntimeUtils-prefix.pch in Sources */ = {isa = PBXBuildFile; fileRef = 02BACA3A65EE22C45574690EF660B0A9 /* UIKitRuntimeUtils-prefix.pch */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0A8039D6A4A85CD7FFDFA9422C15509E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 080F59097DD48B0EB48E016554D1CFB9;
-			remoteInfo = ObjCRuntimeUtils;
-		};
-		698EC1D67E046DA480A579E01735F8C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 080F59097DD48B0EB48E016554D1CFB9;
-			remoteInfo = ObjCRuntimeUtils;
-		};
-		6E94DE60737A843E1DBC10966E4AC707 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F04444F69F270C1C89F8389B15AC403E;
-			remoteInfo = "Pods-HYUIKitRuntimeUtils_Example";
-		};
-		BC1AD662AE5218149CD8B87BC3D06693 /* PBXContainerItemProxy */ = {
+		0C9EDD0969D7DB8F4CD1ABAEF4127726 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 81601F02BEE4771A505248457B3A833E;
 			remoteInfo = HYUIKitRuntimeUtils;
 		};
+		48AC9672DA83D44B443951CF8870F46D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F04444F69F270C1C89F8389B15AC403E;
+			remoteInfo = "Pods-HYUIKitRuntimeUtils_Example";
+		};
+		4EC610786FCA4D889CADF9741E0E477B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 080F59097DD48B0EB48E016554D1CFB9;
+			remoteInfo = ObjCRuntimeUtils;
+		};
+		CE633C266BFF55B7AF180C11D69777D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 080F59097DD48B0EB48E016554D1CFB9;
+			remoteInfo = ObjCRuntimeUtils;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02BACA3A65EE22C45574690EF660B0A9 /* UIKitRuntimeUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKitRuntimeUtils-prefix.pch"; path = "HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/UIKitRuntimeUtils-prefix.pch"; sourceTree = "<group>"; };
+		032EC9B1F164C8F11ED27CF60C17D114 /* UIWindow+OrientationChange.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWindow+OrientationChange.m"; path = "HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/UIWindow+OrientationChange.m"; sourceTree = "<group>"; };
 		06F7DDE06A8FD91CDBBD7F2E5578263C /* ObjCRuntimeUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjCRuntimeUtils.debug.xcconfig; sourceTree = "<group>"; };
-		0A08FDED2D355D439A5D70A7143E68D4 /* NotificationCenterUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NotificationCenterUtils.m; path = HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/NotificationCenterUtils.m; sourceTree = "<group>"; };
 		0A7E1AE61125482B099882C3576173B6 /* Pods-HYUIKitRuntimeUtils_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HYUIKitRuntimeUtils_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		112C423EC34178A89B9A3AE657E9CF2D /* HYUIKitRuntimeUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HYUIKitRuntimeUtils-dummy.m"; sourceTree = "<group>"; };
-		124A521D7270C681E3DFC51342AB2435 /* UIViewController+Navigation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Navigation.h"; path = "HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/UIViewController+Navigation.h"; sourceTree = "<group>"; };
+		12E50597372103C88E4CE32D3EA0E745 /* UIViewController+Navigation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Navigation.h"; path = "HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/UIViewController+Navigation.h"; sourceTree = "<group>"; };
+		146BA70ABC40B7715477942B685D2645 /* HYUIKitRuntimeUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HYUIKitRuntimeUtils.release.xcconfig; sourceTree = "<group>"; };
 		14FB78FBFA906D4DCE2BDC498D5A5A9D /* Pods-HYUIKitRuntimeUtils_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HYUIKitRuntimeUtils_Example-Info.plist"; sourceTree = "<group>"; };
+		1754C4D277C1357EE8C9E65F65B38517 /* UIMenuItem+Icons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIMenuItem+Icons.m"; path = "HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/UIMenuItem+Icons.m"; sourceTree = "<group>"; };
+		182EEBBA971E4C4E9C2D34EDA2A06527 /* HYUIKitRuntimeUtils.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HYUIKitRuntimeUtils.modulemap; sourceTree = "<group>"; };
 		1861B800A5E06B2D43F25BF7D8DF0750 /* Pods-HYUIKitRuntimeUtils_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-HYUIKitRuntimeUtils_Example"; path = Pods_HYUIKitRuntimeUtils_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D148E2AB5F8256FCCB5C78F1A54FCEB /* UIWindow+OrientationChange.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWindow+OrientationChange.m"; path = "HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/UIWindow+OrientationChange.m"; sourceTree = "<group>"; };
-		1E99A6CD4AAB3DD3044B29BA8EAB3BD8 /* UIViewController+Navigation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Navigation.m"; path = "HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/UIViewController+Navigation.m"; sourceTree = "<group>"; };
+		1E03DF0696FA0351C0FBB7E0E3E2930D /* NSBag.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NSBag.h; path = HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/NSBag.h; sourceTree = "<group>"; };
+		22E5C4202261D7ACFCB4111F5878C618 /* UIKitRuntimeUtils-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKitRuntimeUtils-umbrella.h"; path = "HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/UIKitRuntimeUtils-umbrella.h"; sourceTree = "<group>"; };
 		24FD5EED2E070EB6056DD20EFD9BE61E /* Pods-HYUIKitRuntimeUtils_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-HYUIKitRuntimeUtils_Tests"; path = Pods_HYUIKitRuntimeUtils_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		291B22AA4531B202D41C919CD2E6918C /* RuntimeUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RuntimeUtils.m; path = Source/ObjCRuntimeUtils/RuntimeUtils.m; sourceTree = "<group>"; };
 		29D5D39608AC782B29B4D846B3766421 /* ObjCRuntimeUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ObjCRuntimeUtils-dummy.m"; sourceTree = "<group>"; };
 		309D1A254FF1FE0DECFD8B079BC62EE5 /* ObjCRuntimeUtils-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjCRuntimeUtils-umbrella.h"; sourceTree = "<group>"; };
-		32D416F588EAB53A90F03367E2B164FA /* UINavigationItem+Proxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationItem+Proxy.m"; path = "HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/UINavigationItem+Proxy.m"; sourceTree = "<group>"; };
+		34B9806D3E7111C88703E623AC853A85 /* UIViewController+Navigation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Navigation.m"; path = "HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/UIViewController+Navigation.m"; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		395936C36FC7B194C99096BFD78C60C7 /* Pods-HYUIKitRuntimeUtils_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HYUIKitRuntimeUtils_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		3A58D9419C152250E1AD87DD51F04EC1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		3D671941FD72B66C03EEE24E84E7E0D3 /* UIKitRuntimeUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIKitRuntimeUtils-dummy.m"; path = "HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/UIKitRuntimeUtils-dummy.m"; sourceTree = "<group>"; };
-		3DD9DC38B2771892225DA663DB204539 /* UIKitUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIKitUtils.m; path = HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/UIKitUtils.m; sourceTree = "<group>"; };
+		3A7CB2B2A73268D1589FC2D6FFD29119 /* UINavigationItem+Proxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationItem+Proxy.h"; path = "HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/UINavigationItem+Proxy.h"; sourceTree = "<group>"; };
 		427F8814E59D4EBB5494F726267F0924 /* Pods-HYUIKitRuntimeUtils_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HYUIKitRuntimeUtils_Example.release.xcconfig"; sourceTree = "<group>"; };
-		52C6967CC9F9412BBA0B612C44EC0E4B /* NSWeakReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NSWeakReference.h; path = HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/NSWeakReference.h; sourceTree = "<group>"; };
-		538F083C4AEC500327F98153F7109F3D /* NotificationCenterUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NotificationCenterUtils.h; path = HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/NotificationCenterUtils.h; sourceTree = "<group>"; };
-		596D39366765BA2BA20C848BC3018531 /* HYUIKitRuntimeUtils.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HYUIKitRuntimeUtils.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		51C0676F8FA323619A349EC1E53A7513 /* HYUIKitRuntimeUtils-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HYUIKitRuntimeUtils-umbrella.h"; sourceTree = "<group>"; };
+		55A7B40F421E4925ED28BC08D0D76B5B /* NSWeakReference.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NSWeakReference.m; path = HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/NSWeakReference.m; sourceTree = "<group>"; };
+		5ACAE22858531293F53315F88A83EE2E /* HYUIKitRuntimeUtils.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HYUIKitRuntimeUtils.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5BCCDFFFBF451EDCEA493900B1A9AD55 /* Pods-HYUIKitRuntimeUtils_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HYUIKitRuntimeUtils_Tests.modulemap"; sourceTree = "<group>"; };
-		5BEF5CEFAA8AA06DA8E5017AAA273D8B /* HYUIKitRuntimeUtils-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HYUIKitRuntimeUtils-umbrella.h"; sourceTree = "<group>"; };
-		5F6C353E6E2F49EA99C2C616D7E0C71E /* UIKitRuntimeUtils-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKitRuntimeUtils-umbrella.h"; path = "HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/UIKitRuntimeUtils-umbrella.h"; sourceTree = "<group>"; };
+		6219661C1CF6767FB5F0C6CAF2C3E696 /* NSBag.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NSBag.m; path = HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/NSBag.m; sourceTree = "<group>"; };
 		739D2D48C471EB8A3B3A06C7806C5A41 /* Pods-HYUIKitRuntimeUtils_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HYUIKitRuntimeUtils_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		76F6537DD6EEE467720E8454261965AA /* UINavigationItem+Proxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationItem+Proxy.h"; path = "HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/UINavigationItem+Proxy.h"; sourceTree = "<group>"; };
+		76DE33212E0E583B3F598F74ADAEB44C /* HYUIKitRuntimeUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HYUIKitRuntimeUtils-prefix.pch"; sourceTree = "<group>"; };
 		78ECDB0C870CC894F6DB71931B661816 /* Pods-HYUIKitRuntimeUtils_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HYUIKitRuntimeUtils_Tests-dummy.m"; sourceTree = "<group>"; };
+		79FD7BD2B33F0BDE3D6E0B7C71322F12 /* NotificationCenterUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NotificationCenterUtils.h; path = HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/NotificationCenterUtils.h; sourceTree = "<group>"; };
 		7B3B038CA745EF532E4D9B453B9E2967 /* ObjCRuntimeUtils */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ObjCRuntimeUtils; path = ObjCRuntimeUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C4B12D48FD07E759B5993BD9C700B13 /* Pods-HYUIKitRuntimeUtils_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HYUIKitRuntimeUtils_Example-frameworks.sh"; sourceTree = "<group>"; };
+		7D7B8C55A3F52CC82FE8514E55C2CA67 /* HYUIKitRuntimeUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HYUIKitRuntimeUtils.debug.xcconfig; sourceTree = "<group>"; };
 		7D97A06864D8A45D72F1C7CA75305462 /* Pods-HYUIKitRuntimeUtils_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HYUIKitRuntimeUtils_Example.modulemap"; sourceTree = "<group>"; };
+		7EE74F00FE9E66FCE735ACE207D7D790 /* UIMenuItem+Icons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIMenuItem+Icons.h"; path = "HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/UIMenuItem+Icons.h"; sourceTree = "<group>"; };
+		87E2DF42B7EF3BBAFC1E28F06F725E2D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		889BF7D2563BD2BF7FA6BD25CC38D3DD /* Pods-HYUIKitRuntimeUtils_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HYUIKitRuntimeUtils_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8E2F41ED0F3BFE60173F8DE1C7284E8B /* NSBag.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NSBag.h; path = HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/NSBag.h; sourceTree = "<group>"; };
-		90D54AAC80007811856005518FCDA235 /* UIKitRuntimeUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKitRuntimeUtils-prefix.pch"; path = "HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/UIKitRuntimeUtils-prefix.pch"; sourceTree = "<group>"; };
-		9653C6CF67FFEED2E0BC32D03B68C934 /* HYUIKitRuntimeUtils.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HYUIKitRuntimeUtils.modulemap; sourceTree = "<group>"; };
+		8A5B8166AA50859EE54445BF1C606B85 /* HYUIKitRuntimeUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HYUIKitRuntimeUtils-dummy.m"; sourceTree = "<group>"; };
 		9671BF4F618FE92FDD52EE776CDB292E /* Pods-HYUIKitRuntimeUtils_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HYUIKitRuntimeUtils_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E489631FC2F61444A4976287F1B11AE /* UIMenuItem+Icons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIMenuItem+Icons.h"; path = "HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/UIMenuItem+Icons.h"; sourceTree = "<group>"; };
-		9F644D6353CAE8DFAA62064AD9CA4E6B /* NSBag.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NSBag.m; path = HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/NSBag.m; sourceTree = "<group>"; };
-		A93FE9B375107C0749E3E3EFBF61DAEF /* HYUIKitRuntimeUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HYUIKitRuntimeUtils.release.xcconfig; sourceTree = "<group>"; };
+		A3FCF3BD14396D1D2AB23ACD2FD1A8F2 /* HYUIKitRuntimeUtils-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HYUIKitRuntimeUtils-Info.plist"; sourceTree = "<group>"; };
+		B04EA502DB8FDB3160B635805CA26E4D /* NotificationCenterUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NotificationCenterUtils.m; path = HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/NotificationCenterUtils.m; sourceTree = "<group>"; };
 		B102DF0AA70298A86D07559CD9176AB8 /* Pods-HYUIKitRuntimeUtils_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HYUIKitRuntimeUtils_Tests-Info.plist"; sourceTree = "<group>"; };
 		B28860EA69D2375B57103A5D1E156D27 /* ObjCRuntimeUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjCRuntimeUtils.release.xcconfig; sourceTree = "<group>"; };
-		B4D4C92305E28150A7D3B0619708E245 /* NSWeakReference.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NSWeakReference.m; path = HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/NSWeakReference.m; sourceTree = "<group>"; };
-		BCBD90B2287140D72670DF43A460D186 /* HYUIKitRuntimeUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HYUIKitRuntimeUtils.debug.xcconfig; sourceTree = "<group>"; };
+		BF4D279ECD649673EB7DCF4CE905082E /* UINavigationItem+Proxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationItem+Proxy.m"; path = "HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/UINavigationItem+Proxy.m"; sourceTree = "<group>"; };
 		BFA42E2486D2F565C2861A3F7B50A31A /* Pods-HYUIKitRuntimeUtils_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HYUIKitRuntimeUtils_Tests-umbrella.h"; sourceTree = "<group>"; };
 		C4646D8BD543100DFD7A996077DE8AFB /* HYUIKitRuntimeUtils */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HYUIKitRuntimeUtils; path = HYUIKitRuntimeUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5C0157B326F364346756347F8C90357 /* ObjCRuntimeUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjCRuntimeUtils-prefix.pch"; sourceTree = "<group>"; };
@@ -126,15 +125,14 @@
 		CB15B039710527D78DA77598EF90BBC1 /* ObjCRuntimeUtils.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ObjCRuntimeUtils.modulemap; sourceTree = "<group>"; };
 		CCBD6B9282B57A567F9D11D4FFBC10F3 /* RuntimeUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RuntimeUtils.h; path = Source/ObjCRuntimeUtils/RuntimeUtils.h; sourceTree = "<group>"; };
 		CDDFDAFC4189EACDE48CD96C7D4EF48D /* Pods-HYUIKitRuntimeUtils_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HYUIKitRuntimeUtils_Example-dummy.m"; sourceTree = "<group>"; };
-		CF200515666F1E8288A277C3615A3786 /* UIMenuItem+Icons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIMenuItem+Icons.m"; path = "HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/UIMenuItem+Icons.m"; sourceTree = "<group>"; };
-		E72EDBE9141A84757F354A5BE5BACC1D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		D3B463AF7C2DCF1E2A0DBB98F5383DF5 /* UIKitUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIKitUtils.m; path = HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/UIKitUtils.m; sourceTree = "<group>"; };
+		D4C2F0B5BB7D2A74208053754AD54414 /* UIWindow+OrientationChange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWindow+OrientationChange.h"; path = "HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/UIWindow+OrientationChange.h"; sourceTree = "<group>"; };
+		E60765C00827A3B7F33ED168B8B5A7B7 /* UIKitUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIKitUtils.h; path = HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/UIKitUtils.h; sourceTree = "<group>"; };
 		E7E4B6068E3B031D97B6C071FEE6A5E9 /* Pods-HYUIKitRuntimeUtils_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HYUIKitRuntimeUtils_Example-umbrella.h"; sourceTree = "<group>"; };
-		F219BAE7C3A8EA1CF4E994F1EB36B94E /* HYUIKitRuntimeUtils-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HYUIKitRuntimeUtils-Info.plist"; sourceTree = "<group>"; };
-		F945EEDA4D3E3C41AC161C5A60B7E367 /* UIWindow+OrientationChange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWindow+OrientationChange.h"; path = "HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/UIWindow+OrientationChange.h"; sourceTree = "<group>"; };
+		F1736CD6CF67023CB8477CEA6117E3E9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F76F9D37CC39A6F9F0A629F78A1BD4CC /* NSWeakReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NSWeakReference.h; path = HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/NSWeakReference.h; sourceTree = "<group>"; };
 		F9A7AF61451135BBB2E804B94E2F09C4 /* Pods-HYUIKitRuntimeUtils_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HYUIKitRuntimeUtils_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		FAC0BE8E757F268C44BED92251C0D406 /* UIKitUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIKitUtils.h; path = HYUIKitRuntimeUtils/Classes/UIKitRuntimeUtils/Source/UIKitRuntimeUtils/UIKitUtils.h; sourceTree = "<group>"; };
 		FB483A0B860577B865C73642A435BFCC /* ObjCRuntimeUtils-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ObjCRuntimeUtils-Info.plist"; sourceTree = "<group>"; };
-		FF5D9969C3F62839288D700019A29325 /* HYUIKitRuntimeUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HYUIKitRuntimeUtils-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,19 +144,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3884FBE18AD2C48C9EBF4167F70C084C /* Frameworks */ = {
+		910AE821C283B23845506C3933CF61A1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BA9912B8C9EE2C74C59B3FDB47287E1 /* Foundation.framework in Frameworks */,
+				D2DBBF57AB0CEB37E81D8DE96318538A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		39667541EE2D22B0A04E8C3FE364B961 /* Frameworks */ = {
+		918545E20526CD1C20B21C70AB1C9EDC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F34CBDC3FD13344314B652C9DACFFA0C /* Foundation.framework in Frameworks */,
+				3834FB57E057344BBA90F346CE958867 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,27 +190,40 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		1D2BBE98E3554555A7E5567718603563 /* Support Files */ = {
+		51041444B70F0F7C5E25121A79F336D8 /* HYUIKitRuntimeUtils */ = {
 			isa = PBXGroup;
 			children = (
-				9653C6CF67FFEED2E0BC32D03B68C934 /* HYUIKitRuntimeUtils.modulemap */,
-				112C423EC34178A89B9A3AE657E9CF2D /* HYUIKitRuntimeUtils-dummy.m */,
-				F219BAE7C3A8EA1CF4E994F1EB36B94E /* HYUIKitRuntimeUtils-Info.plist */,
-				FF5D9969C3F62839288D700019A29325 /* HYUIKitRuntimeUtils-prefix.pch */,
-				5BEF5CEFAA8AA06DA8E5017AAA273D8B /* HYUIKitRuntimeUtils-umbrella.h */,
-				BCBD90B2287140D72670DF43A460D186 /* HYUIKitRuntimeUtils.debug.xcconfig */,
-				A93FE9B375107C0749E3E3EFBF61DAEF /* HYUIKitRuntimeUtils.release.xcconfig */,
+				79FD7BD2B33F0BDE3D6E0B7C71322F12 /* NotificationCenterUtils.h */,
+				B04EA502DB8FDB3160B635805CA26E4D /* NotificationCenterUtils.m */,
+				1E03DF0696FA0351C0FBB7E0E3E2930D /* NSBag.h */,
+				6219661C1CF6767FB5F0C6CAF2C3E696 /* NSBag.m */,
+				F76F9D37CC39A6F9F0A629F78A1BD4CC /* NSWeakReference.h */,
+				55A7B40F421E4925ED28BC08D0D76B5B /* NSWeakReference.m */,
+				02BACA3A65EE22C45574690EF660B0A9 /* UIKitRuntimeUtils-prefix.pch */,
+				22E5C4202261D7ACFCB4111F5878C618 /* UIKitRuntimeUtils-umbrella.h */,
+				E60765C00827A3B7F33ED168B8B5A7B7 /* UIKitUtils.h */,
+				D3B463AF7C2DCF1E2A0DBB98F5383DF5 /* UIKitUtils.m */,
+				7EE74F00FE9E66FCE735ACE207D7D790 /* UIMenuItem+Icons.h */,
+				1754C4D277C1357EE8C9E65F65B38517 /* UIMenuItem+Icons.m */,
+				3A7CB2B2A73268D1589FC2D6FFD29119 /* UINavigationItem+Proxy.h */,
+				BF4D279ECD649673EB7DCF4CE905082E /* UINavigationItem+Proxy.m */,
+				12E50597372103C88E4CE32D3EA0E745 /* UIViewController+Navigation.h */,
+				34B9806D3E7111C88703E623AC853A85 /* UIViewController+Navigation.m */,
+				D4C2F0B5BB7D2A74208053754AD54414 /* UIWindow+OrientationChange.h */,
+				032EC9B1F164C8F11ED27CF60C17D114 /* UIWindow+OrientationChange.m */,
+				51C7437E7ABB6BCBB93DC30E21A0FE3C /* Pod */,
+				BDC52F0D76BB2F5FE83B339A60F2F89B /* Support Files */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/HYUIKitRuntimeUtils";
+			name = HYUIKitRuntimeUtils;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		4D5EDA1FD7799CDC5F36D5196EAB440F /* Pod */ = {
+		51C7437E7ABB6BCBB93DC30E21A0FE3C /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				596D39366765BA2BA20C848BC3018531 /* HYUIKitRuntimeUtils.podspec */,
-				3A58D9419C152250E1AD87DD51F04EC1 /* LICENSE */,
-				E72EDBE9141A84757F354A5BE5BACC1D /* README.md */,
+				5ACAE22858531293F53315F88A83EE2E /* HYUIKitRuntimeUtils.podspec */,
+				F1736CD6CF67023CB8477CEA6117E3E9 /* LICENSE */,
+				87E2DF42B7EF3BBAFC1E28F06F725E2D /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -232,14 +243,6 @@
 			path = "../Target Support Files/ObjCRuntimeUtils";
 			sourceTree = "<group>";
 		};
-		753D40666F3345277BE1A16F32170FEA /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F52942A7F5D8C605613671959B54846C /* HYUIKitRuntimeUtils */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		B6A409404B14C8E8487D26A6E0B1FA5A /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +250,21 @@
 				F77264CF3FDF5F6DA9E619DC9D041400 /* Pods-HYUIKitRuntimeUtils_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BDC52F0D76BB2F5FE83B339A60F2F89B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				182EEBBA971E4C4E9C2D34EDA2A06527 /* HYUIKitRuntimeUtils.modulemap */,
+				8A5B8166AA50859EE54445BF1C606B85 /* HYUIKitRuntimeUtils-dummy.m */,
+				A3FCF3BD14396D1D2AB23ACD2FD1A8F2 /* HYUIKitRuntimeUtils-Info.plist */,
+				76DE33212E0E583B3F598F74ADAEB44C /* HYUIKitRuntimeUtils-prefix.pch */,
+				51C0676F8FA323619A349EC1E53A7513 /* HYUIKitRuntimeUtils-umbrella.h */,
+				7D7B8C55A3F52CC82FE8514E55C2CA67 /* HYUIKitRuntimeUtils.debug.xcconfig */,
+				146BA70ABC40B7715477942B685D2645 /* HYUIKitRuntimeUtils.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HYUIKitRuntimeUtils";
 			sourceTree = "<group>";
 		};
 		C38F8816EE9F8E87D4E32A04B4390B2E /* ObjCRuntimeUtils */ = {
@@ -260,11 +278,19 @@
 			path = ObjCRuntimeUtils;
 			sourceTree = "<group>";
 		};
+		C8DD6990658DD878FAF5AD5E0C3C31CB /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51041444B70F0F7C5E25121A79F336D8 /* HYUIKitRuntimeUtils */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				753D40666F3345277BE1A16F32170FEA /* Development Pods */,
+				C8DD6990658DD878FAF5AD5E0C3C31CB /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				13213E7BDF2303A7B1C70A5C588E28B2 /* Pods */,
 				0A114CC7518189F604A74CAB04C3D868 /* Products */,
@@ -305,35 +331,6 @@
 			path = "Target Support Files/Pods-HYUIKitRuntimeUtils_Example";
 			sourceTree = "<group>";
 		};
-		F52942A7F5D8C605613671959B54846C /* HYUIKitRuntimeUtils */ = {
-			isa = PBXGroup;
-			children = (
-				538F083C4AEC500327F98153F7109F3D /* NotificationCenterUtils.h */,
-				0A08FDED2D355D439A5D70A7143E68D4 /* NotificationCenterUtils.m */,
-				8E2F41ED0F3BFE60173F8DE1C7284E8B /* NSBag.h */,
-				9F644D6353CAE8DFAA62064AD9CA4E6B /* NSBag.m */,
-				52C6967CC9F9412BBA0B612C44EC0E4B /* NSWeakReference.h */,
-				B4D4C92305E28150A7D3B0619708E245 /* NSWeakReference.m */,
-				3D671941FD72B66C03EEE24E84E7E0D3 /* UIKitRuntimeUtils-dummy.m */,
-				90D54AAC80007811856005518FCDA235 /* UIKitRuntimeUtils-prefix.pch */,
-				5F6C353E6E2F49EA99C2C616D7E0C71E /* UIKitRuntimeUtils-umbrella.h */,
-				FAC0BE8E757F268C44BED92251C0D406 /* UIKitUtils.h */,
-				3DD9DC38B2771892225DA663DB204539 /* UIKitUtils.m */,
-				9E489631FC2F61444A4976287F1B11AE /* UIMenuItem+Icons.h */,
-				CF200515666F1E8288A277C3615A3786 /* UIMenuItem+Icons.m */,
-				76F6537DD6EEE467720E8454261965AA /* UINavigationItem+Proxy.h */,
-				32D416F588EAB53A90F03367E2B164FA /* UINavigationItem+Proxy.m */,
-				124A521D7270C681E3DFC51342AB2435 /* UIViewController+Navigation.h */,
-				1E99A6CD4AAB3DD3044B29BA8EAB3BD8 /* UIViewController+Navigation.m */,
-				F945EEDA4D3E3C41AC161C5A60B7E367 /* UIWindow+OrientationChange.h */,
-				1D148E2AB5F8256FCCB5C78F1A54FCEB /* UIWindow+OrientationChange.m */,
-				4D5EDA1FD7799CDC5F36D5196EAB440F /* Pod */,
-				1D2BBE98E3554555A7E5567718603563 /* Support Files */,
-			);
-			name = HYUIKitRuntimeUtils;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		F77264CF3FDF5F6DA9E619DC9D041400 /* Pods-HYUIKitRuntimeUtils_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -353,20 +350,12 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		211216CDB962F8D165E3FC8E60C2BB89 /* Headers */ = {
+		14B2B0E254550E7E97F488D9C0D4B47D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8F77D8E8BEA5402ACB34D8915B3B440 /* HYUIKitRuntimeUtils-umbrella.h in Headers */,
-				3A6FC1EACBEA6BDD8EE3E133BD056A07 /* NotificationCenterUtils.h in Headers */,
-				14651E97EEA826D55A19C9923052061B /* NSBag.h in Headers */,
-				65B050ECC16B57D5735D0D5FA6E3D81D /* NSWeakReference.h in Headers */,
-				9C8F2417C8622E14613B52659724058D /* UIKitRuntimeUtils-umbrella.h in Headers */,
-				CE492F28C5231E468070AA7E17450052 /* UIKitUtils.h in Headers */,
-				5FAF831741DF822259906F78FCD71E8B /* UIMenuItem+Icons.h in Headers */,
-				F410AE479B41E98B1F12C2F55FE49580 /* UINavigationItem+Proxy.h in Headers */,
-				65B036C8CBA43D4D96B961633BC0F840 /* UIViewController+Navigation.h in Headers */,
-				772F40E4BEED06860B0F7EC99C19EF60 /* UIWindow+OrientationChange.h in Headers */,
+				03FB46DF17B62B5D895683648F50DA7B /* ObjCRuntimeUtils-umbrella.h in Headers */,
+				14AFABCE0F0BD834F2FF7BACD3236367 /* RuntimeUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,12 +375,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FFDDC5A55A595EEE863305019D7F2CA2 /* Headers */ = {
+		F4EA667AD8F9EC066A1560D7BE852B1E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F70F2C9E87465E0B22CF5B409AF96C46 /* ObjCRuntimeUtils-umbrella.h in Headers */,
-				7A74781BBEFF7A93B631A4B7BF9CE3D1 /* RuntimeUtils.h in Headers */,
+				C010F00A3C7E8C1947A32BB831D8321B /* HYUIKitRuntimeUtils-umbrella.h in Headers */,
+				743A18949ABB9EA1188C808CD5E3F6D3 /* NotificationCenterUtils.h in Headers */,
+				0F8CB212E8BAB2AFDDFA92838D7278B0 /* NSBag.h in Headers */,
+				5DC57C2C3548411639B95B421058775A /* NSWeakReference.h in Headers */,
+				87D10E042EEE15FB0645273905042F9C /* UIKitRuntimeUtils-umbrella.h in Headers */,
+				D4786E4A70E582CCBEFB939C85F68451 /* UIKitUtils.h in Headers */,
+				AD431A52217541DA3D37BE958C1D586A /* UIMenuItem+Icons.h in Headers */,
+				4CE0A8E6D24E5BCE365E6A9A4289D311 /* UINavigationItem+Proxy.h in Headers */,
+				358FB9F703EDBBADB0D7FE80BE1B7E3D /* UIViewController+Navigation.h in Headers */,
+				738C0334CA1FBB8001215F52DC231D0D /* UIWindow+OrientationChange.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,12 +397,12 @@
 /* Begin PBXNativeTarget section */
 		080F59097DD48B0EB48E016554D1CFB9 /* ObjCRuntimeUtils */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 53F2ADBDBE4BD539F59EFC1F94534895 /* Build configuration list for PBXNativeTarget "ObjCRuntimeUtils" */;
+			buildConfigurationList = 3CA1B5803E77F5F2915AFF9EB1BFD8AA /* Build configuration list for PBXNativeTarget "ObjCRuntimeUtils" */;
 			buildPhases = (
-				FFDDC5A55A595EEE863305019D7F2CA2 /* Headers */,
-				A92F20B448E890637FCB953227AE50AC /* Sources */,
-				3884FBE18AD2C48C9EBF4167F70C084C /* Frameworks */,
-				737B0EFC2754A4A430909369BB76B991 /* Resources */,
+				14B2B0E254550E7E97F488D9C0D4B47D /* Headers */,
+				B20807987B15E36FE7AD9C442E7D1D36 /* Sources */,
+				910AE821C283B23845506C3933CF61A1 /* Frameworks */,
+				DD2F2A2B2DA900BA5778A75F7EBF6E53 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -418,17 +415,17 @@
 		};
 		81601F02BEE4771A505248457B3A833E /* HYUIKitRuntimeUtils */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B5A9FB1240E26C266475462DB2016809 /* Build configuration list for PBXNativeTarget "HYUIKitRuntimeUtils" */;
+			buildConfigurationList = AD32F2E1924ADB83BCC3E77A77E65DA5 /* Build configuration list for PBXNativeTarget "HYUIKitRuntimeUtils" */;
 			buildPhases = (
-				211216CDB962F8D165E3FC8E60C2BB89 /* Headers */,
-				D2F925ADFE24F267E1D46EF497F9DE3B /* Sources */,
-				39667541EE2D22B0A04E8C3FE364B961 /* Frameworks */,
-				7BCEEED8F8C1A1C6D521D881BE73CC6C /* Resources */,
+				F4EA667AD8F9EC066A1560D7BE852B1E /* Headers */,
+				6BF6B1A3C11A489C4218397749646017 /* Sources */,
+				918545E20526CD1C20B21C70AB1C9EDC /* Frameworks */,
+				A69EE585CB4ABF9661FE5F7D07A72D6B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				998E42E2A23DFE7BC184768B2D4DAD11 /* PBXTargetDependency */,
+				FB8A948D86F1D14F883570873B91E8D2 /* PBXTargetDependency */,
 			);
 			name = HYUIKitRuntimeUtils;
 			productName = HYUIKitRuntimeUtils;
@@ -447,8 +444,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				149D374EA3DBF07EADFFB4B4F13C5F51 /* PBXTargetDependency */,
-				356E593B33240B1669527C2EACC16AE3 /* PBXTargetDependency */,
+				417C28BD8BA88E7EA437DF5545CCDEC4 /* PBXTargetDependency */,
+				47E2B1B5694599F32E28974C3B422677 /* PBXTargetDependency */,
 			);
 			name = "Pods-HYUIKitRuntimeUtils_Example";
 			productName = Pods_HYUIKitRuntimeUtils_Example;
@@ -467,7 +464,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				7B9E2E48FF236DE799A29CCD9DC6BFF4 /* PBXTargetDependency */,
+				D55502E325B94FD01C107013D24EB7FE /* PBXTargetDependency */,
 			);
 			name = "Pods-HYUIKitRuntimeUtils_Tests";
 			productName = Pods_HYUIKitRuntimeUtils_Tests;
@@ -514,21 +511,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		737B0EFC2754A4A430909369BB76B991 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7BCEEED8F8C1A1C6D521D881BE73CC6C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		904C73D12B918ACD963B615C53E758F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A69EE585CB4ABF9661FE5F7D07A72D6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD2F2A2B2DA900BA5778A75F7EBF6E53 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -554,102 +551,62 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A92F20B448E890637FCB953227AE50AC /* Sources */ = {
+		6BF6B1A3C11A489C4218397749646017 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A5609F067B9671BFD2D630AECDEA959 /* ObjCRuntimeUtils-dummy.m in Sources */,
-				D19CE17CA3F8BE51AB5227A1CCC8D668 /* RuntimeUtils.m in Sources */,
+				3637603E14B82BE76DD926D1FB4EB868 /* HYUIKitRuntimeUtils-dummy.m in Sources */,
+				A665349EC1CD4205BD429D6F6D487666 /* NotificationCenterUtils.m in Sources */,
+				95E009747373FDF75046315412B8DF16 /* NSBag.m in Sources */,
+				1A423E2C343FB74BBDD7F20D1CEC07DE /* NSWeakReference.m in Sources */,
+				D9E9A250C545CCBFD65D4D10B67757F4 /* UIKitRuntimeUtils-prefix.pch in Sources */,
+				86E0AB1858DB4D249F5E50B630C02617 /* UIKitUtils.m in Sources */,
+				5A4339DD22A61844E77333A423E3B727 /* UIMenuItem+Icons.m in Sources */,
+				53C9AB7177C481878AA1257A2E44A02B /* UINavigationItem+Proxy.m in Sources */,
+				1C08CED84E8B673FEEEAEF7B693A7CC9 /* UIViewController+Navigation.m in Sources */,
+				8CE82CF79BFF10F8D04AC3BD14250187 /* UIWindow+OrientationChange.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D2F925ADFE24F267E1D46EF497F9DE3B /* Sources */ = {
+		B20807987B15E36FE7AD9C442E7D1D36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEAA427A67871B1E6B79687F104F5460 /* HYUIKitRuntimeUtils-dummy.m in Sources */,
-				1791A0FAE830ACE0CAAA49FD7DF7BFCE /* NotificationCenterUtils.m in Sources */,
-				DC1051C6D358CD79B91621C1043BE3AA /* NSBag.m in Sources */,
-				1ADE5D8E6CA0C875CB9BDF8152F27537 /* NSWeakReference.m in Sources */,
-				E55DA3A56C527F0ACE0A3673E89BA6F0 /* UIKitRuntimeUtils-dummy.m in Sources */,
-				4C7E57FEA8BC8C964E01EC9A829945A7 /* UIKitRuntimeUtils-prefix.pch in Sources */,
-				5BFB02FD4E593771D53DF33541D9A7E9 /* UIKitUtils.m in Sources */,
-				8B6296BA0FD124CA710F53356573C4BF /* UIMenuItem+Icons.m in Sources */,
-				BCA4F6BF3843B5B4A0F5C460C23A971E /* UINavigationItem+Proxy.m in Sources */,
-				851A3147CD506F6D4995088C95FA0BA7 /* UIViewController+Navigation.m in Sources */,
-				56FD2976E5606FEF2EE691507420D2C3 /* UIWindow+OrientationChange.m in Sources */,
+				D23343A52CE47B98B3ED1A17F7D3A02E /* ObjCRuntimeUtils-dummy.m in Sources */,
+				33D9CA6255BC7BF1E8997936E0C20504 /* RuntimeUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		149D374EA3DBF07EADFFB4B4F13C5F51 /* PBXTargetDependency */ = {
+		417C28BD8BA88E7EA437DF5545CCDEC4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HYUIKitRuntimeUtils;
 			target = 81601F02BEE4771A505248457B3A833E /* HYUIKitRuntimeUtils */;
-			targetProxy = BC1AD662AE5218149CD8B87BC3D06693 /* PBXContainerItemProxy */;
+			targetProxy = 0C9EDD0969D7DB8F4CD1ABAEF4127726 /* PBXContainerItemProxy */;
 		};
-		356E593B33240B1669527C2EACC16AE3 /* PBXTargetDependency */ = {
+		47E2B1B5694599F32E28974C3B422677 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ObjCRuntimeUtils;
 			target = 080F59097DD48B0EB48E016554D1CFB9 /* ObjCRuntimeUtils */;
-			targetProxy = 698EC1D67E046DA480A579E01735F8C7 /* PBXContainerItemProxy */;
+			targetProxy = 4EC610786FCA4D889CADF9741E0E477B /* PBXContainerItemProxy */;
 		};
-		7B9E2E48FF236DE799A29CCD9DC6BFF4 /* PBXTargetDependency */ = {
+		D55502E325B94FD01C107013D24EB7FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-HYUIKitRuntimeUtils_Example";
 			target = F04444F69F270C1C89F8389B15AC403E /* Pods-HYUIKitRuntimeUtils_Example */;
-			targetProxy = 6E94DE60737A843E1DBC10966E4AC707 /* PBXContainerItemProxy */;
+			targetProxy = 48AC9672DA83D44B443951CF8870F46D /* PBXContainerItemProxy */;
 		};
-		998E42E2A23DFE7BC184768B2D4DAD11 /* PBXTargetDependency */ = {
+		FB8A948D86F1D14F883570873B91E8D2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ObjCRuntimeUtils;
 			target = 080F59097DD48B0EB48E016554D1CFB9 /* ObjCRuntimeUtils */;
-			targetProxy = 0A8039D6A4A85CD7FFDFA9422C15509E /* PBXContainerItemProxy */;
+			targetProxy = CE633C266BFF55B7AF180C11D69777D1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1452BA127BDAB1D93F24B5534B43F99B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06F7DDE06A8FD91CDBBD7F2E5578263C /* ObjCRuntimeUtils.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/ObjCRuntimeUtils/ObjCRuntimeUtils-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/ObjCRuntimeUtils/ObjCRuntimeUtils-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/ObjCRuntimeUtils/ObjCRuntimeUtils.modulemap";
-				PRODUCT_MODULE_NAME = ObjCRuntimeUtils;
-				PRODUCT_NAME = ObjCRuntimeUtils;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		189088D5E6B65AE1AAF19BE4046FF62C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 395936C36FC7B194C99096BFD78C60C7 /* Pods-HYUIKitRuntimeUtils_Tests.release.xcconfig */;
@@ -723,6 +680,45 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4F0A00684B8B399035BA347CF429D743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06F7DDE06A8FD91CDBBD7F2E5578263C /* ObjCRuntimeUtils.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/ObjCRuntimeUtils/ObjCRuntimeUtils-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/ObjCRuntimeUtils/ObjCRuntimeUtils-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ObjCRuntimeUtils/ObjCRuntimeUtils.modulemap";
+				PRODUCT_MODULE_NAME = ObjCRuntimeUtils;
+				PRODUCT_NAME = ObjCRuntimeUtils;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -870,49 +866,9 @@
 			};
 			name = Release;
 		};
-		BF9BB90BD6AF74D469E4F5512F7C1B1F /* Release */ = {
+		8112A1CB62FC5FF445E910805302B630 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A93FE9B375107C0749E3E3EFBF61DAEF /* HYUIKitRuntimeUtils.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/HYUIKitRuntimeUtils/HYUIKitRuntimeUtils-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/HYUIKitRuntimeUtils/HYUIKitRuntimeUtils-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/HYUIKitRuntimeUtils/HYUIKitRuntimeUtils.modulemap";
-				PRODUCT_MODULE_NAME = HYUIKitRuntimeUtils;
-				PRODUCT_NAME = HYUIKitRuntimeUtils;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CA2CA2CC6A5EC26DB6DFBB8605A89322 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BCBD90B2287140D72670DF43A460D186 /* HYUIKitRuntimeUtils.debug.xcconfig */;
+			baseConfigurationReference = 7D7B8C55A3F52CC82FE8514E55C2CA67 /* HYUIKitRuntimeUtils.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -949,9 +905,9 @@
 			};
 			name = Debug;
 		};
-		D27C1E75D92100EC5F03C3F1F2B1BEEF /* Release */ = {
+		B8AA90107B9A27FC7B8025D02160605F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B28860EA69D2375B57103A5D1E156D27 /* ObjCRuntimeUtils.release.xcconfig */;
+			baseConfigurationReference = 146BA70ABC40B7715477942B685D2645 /* HYUIKitRuntimeUtils.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -964,9 +920,9 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/ObjCRuntimeUtils/ObjCRuntimeUtils-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/HYUIKitRuntimeUtils/HYUIKitRuntimeUtils-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/ObjCRuntimeUtils/ObjCRuntimeUtils-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/HYUIKitRuntimeUtils/HYUIKitRuntimeUtils-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -974,14 +930,14 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/ObjCRuntimeUtils/ObjCRuntimeUtils.modulemap";
-				PRODUCT_MODULE_NAME = ObjCRuntimeUtils;
-				PRODUCT_NAME = ObjCRuntimeUtils;
+				MODULEMAP_FILE = "Target Support Files/HYUIKitRuntimeUtils/HYUIKitRuntimeUtils.modulemap";
+				PRODUCT_MODULE_NAME = HYUIKitRuntimeUtils;
+				PRODUCT_NAME = HYUIKitRuntimeUtils;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1055,6 +1011,46 @@
 			};
 			name = Debug;
 		};
+		E33DADB72A00E5B6523C6C57F5323EDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B28860EA69D2375B57103A5D1E156D27 /* ObjCRuntimeUtils.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/ObjCRuntimeUtils/ObjCRuntimeUtils-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/ObjCRuntimeUtils/ObjCRuntimeUtils-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ObjCRuntimeUtils/ObjCRuntimeUtils.modulemap";
+				PRODUCT_MODULE_NAME = ObjCRuntimeUtils;
+				PRODUCT_NAME = ObjCRuntimeUtils;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1063,6 +1059,15 @@
 			buildConfigurations = (
 				6055EFD84A073DA994D0318E6C85D929 /* Debug */,
 				189088D5E6B65AE1AAF19BE4046FF62C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CA1B5803E77F5F2915AFF9EB1BFD8AA /* Build configuration list for PBXNativeTarget "ObjCRuntimeUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F0A00684B8B399035BA347CF429D743 /* Debug */,
+				E33DADB72A00E5B6523C6C57F5323EDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1076,15 +1081,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		53F2ADBDBE4BD539F59EFC1F94534895 /* Build configuration list for PBXNativeTarget "ObjCRuntimeUtils" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1452BA127BDAB1D93F24B5534B43F99B /* Debug */,
-				D27C1E75D92100EC5F03C3F1F2B1BEEF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		5CC427715301ED264A626332D939DA3C /* Build configuration list for PBXNativeTarget "Pods-HYUIKitRuntimeUtils_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1094,11 +1090,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B5A9FB1240E26C266475462DB2016809 /* Build configuration list for PBXNativeTarget "HYUIKitRuntimeUtils" */ = {
+		AD32F2E1924ADB83BCC3E77A77E65DA5 /* Build configuration list for PBXNativeTarget "HYUIKitRuntimeUtils" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA2CA2CC6A5EC26DB6DFBB8605A89322 /* Debug */,
-				BF9BB90BD6AF74D469E4F5512F7C1B1F /* Release */,
+				8112A1CB62FC5FF445E910805302B630 /* Debug */,
+				B8AA90107B9A27FC7B8025D02160605F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

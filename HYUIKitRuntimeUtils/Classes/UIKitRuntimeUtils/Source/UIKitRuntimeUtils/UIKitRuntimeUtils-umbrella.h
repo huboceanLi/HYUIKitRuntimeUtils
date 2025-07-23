@@ -13,7 +13,6 @@
 #import "NotificationCenterUtils.h"
 #import "NSBag.h"
 #import "NSWeakReference.h"
-#import "UIBarButtonItem+Proxy.h"
 #import "UIKitUtils.h"
 #import "UIMenuItem+Icons.h"
 #import "UINavigationItem+Proxy.h"

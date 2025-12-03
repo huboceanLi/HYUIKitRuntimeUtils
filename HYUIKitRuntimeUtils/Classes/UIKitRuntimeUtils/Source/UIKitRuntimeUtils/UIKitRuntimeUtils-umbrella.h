@@ -19,6 +19,7 @@
 #import "UIViewController+Navigation.h"
 #import "UIWindow+OrientationChange.h"
 #import "RuntimeUtils.h"
+#import "UIBarButtonItem+Proxy.h"
 
 
 FOUNDATION_EXPORT double UIKitRuntimeUtilsVersionNumber;

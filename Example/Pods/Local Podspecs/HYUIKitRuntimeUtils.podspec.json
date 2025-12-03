@@ -1,6 +1,6 @@
 {
   "name": "HYUIKitRuntimeUtils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "summary": "In order to extract the texture separately encapsulated HYUIKitRuntimeUtils.",
   "description": "In order to extract the texture separately encapsulated HYUIKitRuntimeUtils.",
   "homepage": "https://github.com/huboceanLi/HYUIKitRuntimeUtils",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/huboceanLi/HYUIKitRuntimeUtils.git",
-    "tag": "1.0.0"
+    "tag": "1.0.1"
   },
   "platforms": {
     "ios": "13.0"

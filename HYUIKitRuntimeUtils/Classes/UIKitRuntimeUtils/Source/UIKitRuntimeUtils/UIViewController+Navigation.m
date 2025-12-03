@@ -1,9 +1,10 @@
 #import "UIViewController+Navigation.h"
 
-#import <ObjCRuntimeUtils/RuntimeUtils.h>
+#import "RuntimeUtils.h"
 #import <objc/runtime.h>
 
 #import "NSWeakReference.h"
+
 
 @interface UIViewControllerPresentingProxy : UIViewController
 
@@ -43,6 +44,7 @@ static const void *inputAccessoryHeightProviderKey = &inputAccessoryHeightProvid
 static const void *interactiveTransitionGestureRecognizerTestKey = &interactiveTransitionGestureRecognizerTestKey;
 static const void *UIViewControllerHintWillBePresentedInPreviewingContextKey = &UIViewControllerHintWillBePresentedInPreviewingContextKey;
 static const void *disablesInteractiveModalDismissKey = &disablesInteractiveModalDismissKey;
+static const void *forceFullRefreshRateKey = &forceFullRefreshRateKey;
 
 static bool notyfyingShiftState = false;
 
@@ -90,6 +92,140 @@ static bool notyfyingShiftState = false;
 
 @end
 
+@interface CADisplayLink (FrameRateRangeOverride)
+
+- (void)_65087dc8_setPreferredFrameRateRange:(CAFrameRateRange)range API_AVAILABLE(ios(15.0));
+
+@end
+
+@implementation CADisplayLink (FrameRateRangeOverride)
+
+- (void)_65087dc8_setPreferredFrameRateRange:(CAFrameRateRange)range API_AVAILABLE(ios(15.0)) {
+    if ([self associatedObjectForKey:forceFullRefreshRateKey] != nil) {
+        float maxFps = [UIScreen mainScreen].maximumFramesPerSecond;
+        if (maxFps > 61.0f) {
+            range = CAFrameRateRangeMake(maxFps, maxFps, maxFps);
+        }
+    }
+    
+    [self _65087dc8_setPreferredFrameRateRange:range];
+}
+
+@end
+
+@implementation UIScrollView (FrameRateRangeOverride)
+
+- (void)fixScrollDisplayLink {
+    if (@available(iOS 16.0, *)) {
+        return;
+    }
+    static NSString *scrollHeartbeatKey = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        scrollHeartbeatKey = [NSString stringWithFormat:@"_%@", @"scrollHeartbeat"];
+    });
+    
+    id value = [self valueForKey:scrollHeartbeatKey];
+    if ([value isKindOfClass:[CADisplayLink class]]) {
+        CADisplayLink *displayLink = (CADisplayLink *)value;
+        if ([displayLink associatedObjectForKey:forceFullRefreshRateKey] == nil) {
+            [displayLink setAssociatedObject:@true forKey:forceFullRefreshRateKey];
+            
+            if (@available(iOS 15.0, *)) {
+                float maxFps = [UIScreen mainScreen].maximumFramesPerSecond;
+                if (maxFps > 61.0f) {
+                    [displayLink setPreferredFrameRateRange:CAFrameRateRangeMake(maxFps, maxFps, maxFps)];
+                }
+            }
+        }
+    }
+}
+
+@end
+
+@interface UIWindow (Telegram)
+
+@end
+
+@implementation UIWindow (Telegram)
+
+- (instancetype)_65087dc8_initWithFrame:(CGRect)frame {
+    return [self _65087dc8_initWithFrame:frame];
+}
+
+@end
+
+@protocol UIRemoteKeyboardWindowProtocol
+
++ (UIWindow * _Nullable)remoteKeyboardWindowForScreen:(UIScreen * _Nullable)screen create:(BOOL)create;
+
+@end
+
+@interface UIFocusSystem (Telegram)
+
+@end
+
+@implementation UIFocusSystem (Telegram)
+
+- (void)_65087dc8_updateFocusIfNeeded {
+    //TODO:Re-enable
+}
+
+@end
+
+static EffectSettingsContainerView *findTopmostEffectSuperview(UIView *view, int depth) {
+    if (depth > 5) {
+        return nil;
+    }
+    if ([view isKindOfClass:[EffectSettingsContainerView class]]) {
+        return (EffectSettingsContainerView* )view;
+    }
+    if (view.superview != nil) {
+        return findTopmostEffectSuperview(view.superview, depth + 1);
+    } else {
+        return nil;
+    }
+}
+
+static id (*original_backdropLayerDidChangeLuma)(UIView *, SEL, CALayer *, double) = NULL;
+static void replacement_backdropLayerDidChangeLuma(UIView *self, SEL selector, CALayer *layer, double luma) {
+    EffectSettingsContainerView *topmostSuperview = findTopmostEffectSuperview(self, 0);
+    if (topmostSuperview) {
+        luma = MIN(MAX(luma, topmostSuperview.lumaMin), topmostSuperview.lumaMax);
+    }
+    original_backdropLayerDidChangeLuma(self, selector, layer, luma);
+}
+
+static void registerEffectViewOverrides(void) {
+    int classCount = objc_getClassList(NULL, 0);
+    if (classCount > 0) {
+        __unsafe_unretained Class *classList = (Class *)malloc(classCount * sizeof(Class));
+        objc_getClassList(classList, classCount);
+        
+        NSString *searchString = [@"UISD" stringByAppendingString:@"FBackdropView"];
+        NSString *selectorString = [@"backdropLayer" stringByAppendingString:@":didChangeLuma:"];
+        
+        for (int i = 0; i < classCount; i++)
+        {
+            const char *className = class_getName(classList[i]);
+            NSString *name = [[NSString alloc] initWithCString:className encoding:NSASCIIStringEncoding];
+            if ([name hasSuffix:searchString]) {
+                Method method = (Method)[RuntimeUtils getMethodOfClass:classList[i] selector:NSSelectorFromString(selectorString)];
+                if (method) {
+                    const char *typeEncoding = method_getTypeEncoding(method);
+                    if (strcmp(typeEncoding, "v32@0:8@16d24") == 0) {
+                        original_backdropLayerDidChangeLuma = (id (*)(id, SEL, CALayer *, double))method_getImplementation(method);
+                        [RuntimeUtils replaceMethodImplementationOfClass:classList[i] selector:NSSelectorFromString(selectorString) replacement:(IMP)&replacement_backdropLayerDidChangeLuma];
+                    }
+                }
+                break;
+            }
+        }
+        
+        free(classList);
+    }
+}
+
 @implementation UIViewController (Navigation)
 
 + (void)load
@@ -106,21 +242,18 @@ static bool notyfyingShiftState = false;
         [RuntimeUtils swizzleInstanceMethodOfClass:[UIViewController class] currentSelector:@selector(presentViewController:animated:completion:) newSelector:@selector(_65087dc8_presentViewController:animated:completion:)];
         [RuntimeUtils swizzleInstanceMethodOfClass:[UIViewController class] currentSelector:@selector(setNeedsStatusBarAppearanceUpdate) newSelector:@selector(_65087dc8_setNeedsStatusBarAppearanceUpdate)];
         
-        /*#pragma clang diagnostic push
-        #pragma clang diagnostic ignored "-Wundeclared-selector"
-        if (@available(iOS 13, *)) {
-            Class UIUndoGestureInteractionClass = NSClassFromString(@"UIUndoGestureInteraction");
-            SEL addGestureRecognizersSelector = @selector(_addGestureRecognizers);
-            IMP doNothing = imp_implementationWithBlock(^void(__unused id _self) {
-                return;
-            });
-            
-            method_setImplementation(class_getInstanceMethod(UIUndoGestureInteractionClass, addGestureRecognizersSelector), doNothing);
-        }
-        #pragma clang diagnostic pop*/
+        [RuntimeUtils swizzleInstanceMethodOfClass:[UIWindow class] currentSelector:@selector(initWithFrame:) newSelector:@selector(_65087dc8_initWithFrame:)];
         
-        //[RuntimeUtils swizzleInstanceMethodOfClass:NSClassFromString(@"UIKeyboardImpl") currentSelector:@selector(notifyShiftState) withAnotherClass:[UIKeyboardImpl_65087dc8 class] newSelector:@selector(notifyShiftState)];
-        //[RuntimeUtils swizzleInstanceMethodOfClass:NSClassFromString(@"UIInputWindowController") currentSelector:@selector(updateViewConstraints) withAnotherClass:[UIInputWindowController_65087dc8 class] newSelector:@selector(updateViewConstraints)];
+        if (@available(iOS 16.0, *)) {
+        } else if (@available(iOS 15.0, *)) {
+            [RuntimeUtils swizzleInstanceMethodOfClass:[CADisplayLink class] currentSelector:@selector(setPreferredFrameRateRange:) newSelector:@selector(_65087dc8_setPreferredFrameRateRange:)];
+        }
+        
+        [RuntimeUtils swizzleInstanceMethodOfClass:[UIFocusSystem class] currentSelector:@selector(updateFocusIfNeeded) newSelector:@selector(_65087dc8_updateFocusIfNeeded)];
+        
+        if (@available(iOS 26.0, *)) {
+            registerEffectViewOverrides();
+        }
     });
 }
 
@@ -252,6 +385,15 @@ static bool notyfyingShiftState = false;
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
     [self setStatusBarHidden:hidden withAnimation:animation];
 #pragma clang diagnostic pop
+}
+
+- (UIWindow * _Nullable)internalGetKeyboard {
+    Class windowClass = NSClassFromString(@"UIRemoteKeyboardWindow");
+    if (!windowClass) {
+        return nil;
+    }
+    UIWindow *result = [(id<UIRemoteKeyboardWindowProtocol>)windowClass remoteKeyboardWindowForScreen:[UIScreen mainScreen] create:false];
+    return result;
 }
 
 @end
@@ -409,6 +551,23 @@ void applyKeyboardAutocorrection(UITextView * _Nonnull textView) {
     Method canBecomeKeyMethod = class_getInstanceMethod(self, @selector(canBecomeKeyWindow));
     IMP canBecomeKeyImplementation = method_getImplementation(canBecomeKeyMethod);
     class_addMethod(self, canBecomeKeySelector, canBecomeKeyImplementation, method_getTypeEncoding(canBecomeKeyMethod));
+}
+
+@end
+
+void snapshotViewByDrawingInContext(UIView * _Nonnull view) {
+    [view drawViewHierarchyInRect:view.bounds afterScreenUpdates:false];
+}
+
+@implementation EffectSettingsContainerView
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self != nil) {
+        _lumaMin = 0.0;
+        _lumaMax = 0.0;
+    }
+    return self;
 }
 
 @end

@@ -22,6 +22,7 @@ typedef NS_OPTIONS(NSUInteger, UIResponderDisableAutomaticKeyboardHandling) {
 
 - (void)internalSetStatusBarStyle:(UIStatusBarStyle)style animated:(BOOL)animated;
 - (void)internalSetStatusBarHidden:(BOOL)hidden animation:(UIStatusBarAnimation)animation;
+- (UIWindow * _Nullable)internalGetKeyboard;
 
 @end
 
@@ -49,16 +50,17 @@ void applyKeyboardAutocorrection(UITextView * _Nonnull textView);
 
 @end
 
-/*@interface _UIPortalView : UIView
+@interface UIScrollView (FrameRateRangeOverride)
 
-- (void)setSourceView:(UIView * _Nullable)sourceView;
-- (bool)hidesSourceView;
-- (void)setHidesSourceView:(bool)arg1;
-- (void)setMatchesAlpha:(bool)arg1;
-- (void)setMatchesPosition:(bool)arg1;
-- (void)setMatchesTransform:(bool)arg1;
-- (bool)matchesTransform;
-- (bool)matchesPosition;
-- (bool)matchesAlpha;
+- (void)fixScrollDisplayLink;
 
-@end*/
+@end
+
+void snapshotViewByDrawingInContext(UIView * _Nonnull view);
+
+@interface EffectSettingsContainerView : UIView
+
+@property (nonatomic) double lumaMin;
+@property (nonatomic) double lumaMax;
+
+@end

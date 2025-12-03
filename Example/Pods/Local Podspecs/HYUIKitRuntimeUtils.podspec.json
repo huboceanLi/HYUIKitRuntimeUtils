@@ -27,10 +27,5 @@
     "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
   },
   "source_files": "HYUIKitRuntimeUtils/Classes/**/*",
-  "dependencies": {
-    "ObjCRuntimeUtils": [
-      "0.0.2"
-    ]
-  },
   "swift_version": "5.0"
 }

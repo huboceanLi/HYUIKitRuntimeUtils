@@ -1,7 +1,7 @@
 #import "UINavigationItem+Proxy.h"
 
 #import "NSBag.h"
-#import <ObjCRuntimeUtils/RuntimeUtils.h>
+#import "RuntimeUtils.h"
 #import "NSWeakReference.h"
 
 static const void *sourceItemKey = &sourceItemKey;
@@ -16,7 +16,9 @@ static const void *setMultipleRightBarButtonItemsListenerKey = &setMultipleRight
 static const void *setBackBarButtonItemListenerBagKey = &setBackBarButtonItemListenerBagKey;
 static const void *setBadgeListenerBagKey = &setBadgeListenerBagKey;
 static const void *badgeKey = &badgeKey;
-static const void *userInfoKey = &userInfoKey;
+static const void *animationNameKey = &animationNameKey;
+static const void *animationOffsetKey = &animationOffsetKey;
+static const void *ringSelectionKey = &ringSelectionKey;
 
 @implementation UINavigationItem (Proxy)
 
@@ -402,12 +404,28 @@ NSInteger UITabBarItem_addSetBadgeListener(UITabBarItem *item, UITabBarItemSetBa
     [(NSBag *)[self associatedObjectForKey:setSelectedImageListenerBagKey] removeItem:key];
 }
 
-- (NSObject * _Nullable)userInfo {
-    return [self associatedObjectForKey:userInfoKey];
+- (void)setAnimationName:(NSString *)animationName {
+    [self setAssociatedObject:animationName forKey:animationNameKey];
 }
 
-- (void)setUserInfo:(NSObject * _Nullable)userInfo {
-    [self setAssociatedObject:userInfo forKey:userInfoKey];
+- (NSString *)animationName {
+    return [self associatedObjectForKey:animationNameKey];
+}
+
+- (void)setAnimationOffset:(CGPoint)animationOffset {
+    [self setAssociatedObject:[NSValue valueWithCGPoint:animationOffset] forKey:animationOffsetKey];
+}
+
+- (CGPoint)animationOffset {
+    return ((NSValue *)[self associatedObjectForKey:animationOffsetKey]).CGPointValue;
+}
+
+- (void)setRingSelection:(bool)ringSelection {
+    [self setAssociatedObject:@(ringSelection) forKey:ringSelectionKey];
+}
+
+- (bool)ringSelection {
+    return ((NSNumber *)[self associatedObjectForKey:ringSelectionKey]).boolValue;
 }
 
 @end

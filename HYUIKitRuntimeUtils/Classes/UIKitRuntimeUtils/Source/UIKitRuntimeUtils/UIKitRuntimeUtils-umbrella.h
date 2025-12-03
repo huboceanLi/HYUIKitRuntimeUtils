@@ -18,6 +18,8 @@
 #import "UINavigationItem+Proxy.h"
 #import "UIViewController+Navigation.h"
 #import "UIWindow+OrientationChange.h"
+#import "RuntimeUtils.h"
+
 
 FOUNDATION_EXPORT double UIKitRuntimeUtilsVersionNumber;
 FOUNDATION_EXPORT const unsigned char UIKitRuntimeUtilsVersionString[];

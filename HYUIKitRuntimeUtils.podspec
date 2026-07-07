@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HYUIKitRuntimeUtils'
-  s.version          = '1.0.5'
+  s.version          = '1.0.6'
   s.summary          = 'In order to extract the texture separately encapsulated HYUIKitRuntimeUtils.'
 
   s.description      = <<-DESC
